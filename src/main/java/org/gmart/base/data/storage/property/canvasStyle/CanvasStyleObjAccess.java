@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  ******************************************************************************/
-package org.gmart.base.canvasStyle;
+package org.gmart.base.data.storage.property.canvasStyle;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;

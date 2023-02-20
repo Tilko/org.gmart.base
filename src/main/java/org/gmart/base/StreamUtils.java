@@ -28,7 +28,7 @@ import java.util.stream.Stream.Builder;
 
 import org.gmart.base.data.transform.TriFunction;
 
-public class StreamUtil {
+public class StreamUtils {
 	public static <T> boolean checkUnicity(Stream<T> stream){
 		return stream.allMatch(new HashSet<>()::add);
 	}
