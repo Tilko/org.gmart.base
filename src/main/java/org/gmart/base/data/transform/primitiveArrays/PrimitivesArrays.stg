@@ -1,0 +1,28 @@
+delimiters "$", "$"
+
+gen(common, type) ::= <<
+package $common.packageName$;
+import javax.annotation.processing.Generated;
+
+@Generated("$common.generatorFQName$")
+public class AdaptArrays {
+	$type:decl(); separator="\n"$
+}
+>>
+
+decl(type) ::= <<
+public static $type.nameBoxed$[] toBoxed($type.name$[] array) {
+	int length = array.length;
+	$type.nameBoxed$[] rez = new $type.nameBoxed$[length];
+	for(int i = 0; i < length; i++)
+		rez[i] = array[i];
+	return rez;
+}
+public static $type.name$[] toUnboxed($type.nameBoxed$[] array) {
+	int length = array.length;
+	$type.name$[] rez = new $type.name$[length];
+	for(int i = 0; i < length; i++)
+		rez[i] = array[i];
+	return rez;
+}
+>>
