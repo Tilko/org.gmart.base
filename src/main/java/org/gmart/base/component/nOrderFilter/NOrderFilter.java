@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import org.gmart.base.data.structure.d1.CircularArrayList;
+import org.gmart.base.data.structure.dim1.CircularArrayList;
 import org.gmart.base.procedure.TriConsumer;
 
 public class NOrderFilter {

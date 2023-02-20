@@ -1,4 +1,4 @@
-package org.gmart.base.data.structure.d1;
+package org.gmart.base.data.structure.dim1;
 
 import java.lang.reflect.Array;
 

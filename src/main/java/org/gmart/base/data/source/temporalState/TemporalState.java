@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import org.gmart.base.data.structure.d1.ListBasedBuilder;
+import org.gmart.base.data.structure.dim1.ListBasedBuilder;
 import org.gmart.base.data.structure.tuple.Pair;
 
 

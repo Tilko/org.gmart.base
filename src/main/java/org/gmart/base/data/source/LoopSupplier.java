@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-import org.gmart.base.data.structure.d1.CircularArrayList;
+import org.gmart.base.data.structure.dim1.CircularArrayList;
 
 public class LoopSupplier<E> implements Supplier<E> {
 	Iterator<E> iterator;

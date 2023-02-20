@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  ******************************************************************************/
-package org.gmart.base.data.structure.d1.reduction;
+package org.gmart.base.data.structure.dim1.reduction;
 
 import java.util.ArrayList;
 import java.util.List;

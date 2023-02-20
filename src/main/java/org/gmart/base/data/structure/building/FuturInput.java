@@ -1,4 +1,4 @@
-package org.gmart.base.builder;
+package org.gmart.base.data.structure.building;
 
 import java.util.ArrayList;
 import java.util.List;

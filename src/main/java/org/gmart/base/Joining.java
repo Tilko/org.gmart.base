@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-import org.gmart.base.data.structure.d1.Arrays2;
+import org.gmart.base.data.structure.dim1.Arrays2;
 
 public class Joining {
 

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang3.ArrayUtils;
-import org.gmart.base.data.structure.d1.Arrays2;
+import org.gmart.base.data.structure.dim1.Arrays2;
 
 import com.google.common.collect.Lists;
 
