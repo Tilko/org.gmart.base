@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-import interfaces.nodes.ThisSupplier;
+import org.gmart.base.data.structure.graph.ThisAs;
 
-public abstract class ListBasedBuilder<T, R, ConcreteBuilder> implements ThisSupplier<ConcreteBuilder>{
+public abstract class ListBasedBuilder<T, R, ConcreteBuilder> implements ThisAs<ConcreteBuilder>{
 	protected List<T> elements = new ArrayList<>();
 	public ListBasedBuilder() {
 		elements = new ArrayList<>();

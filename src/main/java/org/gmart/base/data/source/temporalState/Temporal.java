@@ -12,7 +12,7 @@ public interface Temporal {
 			return true;
 		}
 	}
-	public interface Decorator<T extends Temporal> extends Temporal, interfaces.nodes.Decorator<T>{
+	public interface Decorator<T extends Temporal> extends Temporal, org.gmart.base.data.structure.graph.Decorator<T>{
 
 		//Temporal.Decorator.DefaultStable<T>
 		public interface DefaultStable<T extends Temporal> extends Temporal.Decorator<T> {

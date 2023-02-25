@@ -67,6 +67,15 @@ public class StreamUtils {
 	public static <A,B,C> Stream<C> zip(List<A> as, List<B> bs, BiFunction<? super A, ? super B, ? extends C> toCont){
 		return zipInternal(as, bs, Math.min(as.size(), bs.size()), toCont);
 	}
+	public static <A,B> void zip(List<A> as, List<B> bs, BiConsumer<? super A, ? super B> user){
+		zipInternal(as, bs, Math.min(as.size(), bs.size()), user);
+	}
+	private static <A,B>void zipInternal(List<A> as, List<B> bs, int min, BiConsumer<? super A, ? super B> user) {
+		for(int i = 0; i < min; i++) {
+			user.accept(as.get(i), bs.get(i));
+		}
+	}
+
 	private static <A,B,C> Stream<C> zipInternal(List<A> as, List<B> bs, int size, BiFunction<? super A, ? super B, ? extends C> toCont){
 		Builder<C> builder = Stream.builder();
 		for(int i = 0; i < size; i++) {
